@@ -1,0 +1,16 @@
+#progress-display {
+    margin-top: 20px;
+}
+
+#progress-value {
+    font-weight: bold;
+    color: #008CBA;
+}
+
+.lesson {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 10px;
+}
