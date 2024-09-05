@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Learn a New Language</h1>
+
+        <!-- Lesson 1 -->
+        <div class="lesson" id="lesson1">
+            <h2>Lesson 1</h2>
+            <p>What is the translation for "Hello" in Spanish?</p>
+            <button class="option" onclick="checkAnswer('lesson1', 'wrong')">Bonjour</button>
+            <button class="option" onclick="checkAnswer('lesson1', 'correct')">Hola</button>
+            <button class="option" onclick="checkAnswer('lesson1', 'wrong')">Hallo</button>
+            <button class="option" onclick="checkAnswer('lesson1', 'wrong')">Ciao</button>
+            <p id="result-lesson1"></p>
+        </div>
+
+        <!-- Lesson 2 -->
+        <div class="lesson" id="lesson2" style="display: none;">
+            <h2>Lesson 2</h2>
+            <p>What is the translation for "Goodbye" in Spanish?</p>
+            <button class="option" onclick="checkAnswer('lesson2', 'wrong')">Auf Wiedersehen</button>
+            <button class="option" onclick="checkAnswer('lesson2', 'correct')">Adiós</button>
+            <button class="option" onclick="checkAnswer('lesson2', 'wrong')">Arrivederci</button>
+            <button class="option" onclick="checkAnswer('lesson2', 'wrong')">Au Revoir</button>
+            <p id="result-lesson2"></p>
+        </div>
+
+        <p id="progress-display">Progress: <span id="progress-value">0</span>%</p>
+        <button id="next-lesson" onclick="showNextLesson()" style="display: none;">Next Lesson</button>
+        <button onclick="resetProgress()">Reset Progress</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
